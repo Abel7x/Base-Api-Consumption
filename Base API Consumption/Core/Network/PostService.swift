@@ -8,11 +8,11 @@
 
 import Foundation
 
-class PostService: BaseService<Post> {
+class PostService: BaseService<[Post]> {
     
     private let resourceURL = "posts"
     
-    func getPostList(completion: @escaping (ServiceResponse<Post>) -> Void) {
+    func getPostList(completion: @escaping (ServiceResponse<[Post]>) -> Void) {
         guard let endpoint = URL(string: baseURL + resourceURL) else {
             completion(.failure(error: ServiceError.badRequest))
             return

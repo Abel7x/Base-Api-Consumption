@@ -9,11 +9,24 @@
 import Foundation
 
 class PostListController {
-    private var posts = [Post]()
-    var postLoadedCallback: () -> () = {}
+    private var posts = [Post]() {
+        didSet {
+            updatedPosts()
+        }
+    }
+    var updatedPosts: () -> () = {}
     var totalPosts: Int { return posts.count }
+    let service = PostService()
     
     func retrievePosts() {
-        
+        service.getPostList(){ [unowned self] result in
+            switch result {
+            case .success(let posts):
+                self.posts = posts
+            case .failure:
+                /// TODO Handle error
+                return
+            }
+        }
     }
 }
