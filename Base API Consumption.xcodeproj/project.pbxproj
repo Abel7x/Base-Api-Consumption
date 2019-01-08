@@ -18,6 +18,8 @@
 		E6554D7221E44C4700E6906B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D7021E44C4700E6906B /* PostTableViewCell.swift */; };
 		E6554D7321E44C4700E6906B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6554D7121E44C4700E6906B /* PostTableViewCell.xib */; };
 		E6554D7921E44CF000E6906B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D7821E44CF000E6906B /* Post.swift */; };
+		E6554D7B21E44E0600E6906B /* PostListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D7A21E44E0600E6906B /* PostListController.swift */; };
+		E6554D7D21E44F7C00E6906B /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D7C21E44F7C00E6906B /* PostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		E6554D7021E44C4700E6906B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		E6554D7121E44C4700E6906B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		E6554D7821E44CF000E6906B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E6554D7A21E44E0600E6906B /* PostListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListController.swift; sourceTree = "<group>"; };
+		E6554D7C21E44F7C00E6906B /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E6554D6921E4452400E6906B /* BaseService.swift */,
+				E6554D7C21E44F7C00E6906B /* PostService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		E6554D7521E44C8400E6906B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E6554D7A21E44E0600E6906B /* PostListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -277,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6554D7B21E44E0600E6906B /* PostListController.swift in Sources */,
 				E6554D6D21E44B0500E6906B /* PostsViewController.swift in Sources */,
 				E6554D6A21E4452400E6906B /* BaseService.swift in Sources */,
+				E6554D7D21E44F7C00E6906B /* PostService.swift in Sources */,
 				E6554D7221E44C4700E6906B /* PostTableViewCell.swift in Sources */,
 				E6554D7921E44CF000E6906B /* Post.swift in Sources */,
 				E6554D4A21E4449900E6906B /* ViewController.swift in Sources */,

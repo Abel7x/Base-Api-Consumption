@@ -18,6 +18,9 @@ enum ServiceError: Error {
 }
 
 class BaseService<T: Codable> {
+    
+    internal final let baseURL = "https://jsonplaceholder.typicode.com/"
+    
     func execute(request: URLRequest, completion: @escaping (ServiceResponse<T>) -> Void) {
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: request) { [unowned self] (data, response, error) in
