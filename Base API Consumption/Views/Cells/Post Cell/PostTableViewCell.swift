@@ -9,7 +9,11 @@
 import UIKit
 
 class PostTableViewCell: UITableViewCell {
+    
+    static let reuseIdentifier = "postCell"
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +24,9 @@ class PostTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func configureWith(post: Post){
+        titleLabel.text = post.title
+    }
+    
     
 }

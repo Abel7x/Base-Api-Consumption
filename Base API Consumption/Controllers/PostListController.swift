@@ -29,4 +29,8 @@ class PostListController {
             }
         }
     }
+    
+    func getPostAt(index: IndexPath) -> Post {
+        return posts[index.row]
+    }
 }
