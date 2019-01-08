@@ -14,6 +14,9 @@
 		E6554D5221E4449B00E6906B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6554D5021E4449B00E6906B /* LaunchScreen.storyboard */; };
 		E6554D5D21E4449B00E6906B /* Base_API_ConsumptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D5C21E4449B00E6906B /* Base_API_ConsumptionTests.swift */; };
 		E6554D6A21E4452400E6906B /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D6921E4452400E6906B /* BaseService.swift */; };
+		E6554D6D21E44B0500E6906B /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D6C21E44B0500E6906B /* PostsViewController.swift */; };
+		E6554D7221E44C4700E6906B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6554D7021E44C4700E6906B /* PostTableViewCell.swift */; };
+		E6554D7321E44C4700E6906B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6554D7121E44C4700E6906B /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		E6554D5C21E4449B00E6906B /* Base_API_ConsumptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_API_ConsumptionTests.swift; sourceTree = "<group>"; };
 		E6554D5E21E4449B00E6906B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6554D6921E4452400E6906B /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		E6554D6C21E44B0500E6906B /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		E6554D7021E44C4700E6906B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E6554D7121E44C4700E6906B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		E6554D4621E4449900E6906B /* Base API Consumption */ = {
 			isa = PBXGroup;
 			children = (
+				E6554D6B21E44A2D00E6906B /* Views */,
 				E6554D6721E444E200E6906B /* Core */,
 				E6554D4721E4449900E6906B /* AppDelegate.swift */,
 				E6554D4921E4449900E6906B /* ViewController.swift */,
@@ -113,6 +120,40 @@
 				E6554D6921E4452400E6906B /* BaseService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		E6554D6B21E44A2D00E6906B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6554D6F21E44C2000E6906B /* Cells */,
+				E6554D6E21E44C0F00E6906B /* Post List */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6554D6E21E44C0F00E6906B /* Post List */ = {
+			isa = PBXGroup;
+			children = (
+				E6554D6C21E44B0500E6906B /* PostsViewController.swift */,
+			);
+			path = "Post List";
+			sourceTree = "<group>";
+		};
+		E6554D6F21E44C2000E6906B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E6554D7421E44C4B00E6906B /* Post Cell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E6554D7421E44C4B00E6906B /* Post Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E6554D7021E44C4700E6906B /* PostTableViewCell.swift */,
+				E6554D7121E44C4700E6906B /* PostTableViewCell.xib */,
+			);
+			path = "Post Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +240,7 @@
 				E6554D5221E4449B00E6906B /* LaunchScreen.storyboard in Resources */,
 				E6554D4F21E4449B00E6906B /* Assets.xcassets in Resources */,
 				E6554D4D21E4449900E6906B /* Main.storyboard in Resources */,
+				E6554D7321E44C4700E6906B /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6554D6D21E44B0500E6906B /* PostsViewController.swift in Sources */,
 				E6554D6A21E4452400E6906B /* BaseService.swift in Sources */,
+				E6554D7221E44C4700E6906B /* PostTableViewCell.swift in Sources */,
 				E6554D4A21E4449900E6906B /* ViewController.swift in Sources */,
 				E6554D4821E4449900E6906B /* AppDelegate.swift in Sources */,
 			);
